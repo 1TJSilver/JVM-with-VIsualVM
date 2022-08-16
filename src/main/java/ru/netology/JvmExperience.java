@@ -34,7 +34,6 @@ public class JvmExperience {
 
         Reflections reflections = new Reflections(packageName, new SubTypesScanner(false));
         Set<Class<?>> allClasses = reflections.getSubTypesOf(Object.class);
-
         System.out.println(LocalTime.now() + ": loaded " + allClasses.size() + " classes");
     }
 
